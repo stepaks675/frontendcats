@@ -46,7 +46,6 @@ function App() {
   const closeVideo = () => {
     setShowVideo(false)
   }
-
   const handleSubmit = async () => {
     try {
       alert('Images successfully submitted! Waiting for results...')
@@ -69,7 +68,7 @@ function App() {
         // const cleanedHex = data.score.replace(/0+$/, ""); 
         // const parsedInt = parseInt(cleanedHex, 16); 
         const parsedInt = data.score
-        alert(`Your score is ${parsedInt}`)
+        alert(`Your score is ${parsedInt}/21`)
       } else {
         alert('Failed to submit selected images')
       }
